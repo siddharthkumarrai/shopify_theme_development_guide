@@ -76,5 +76,6 @@ module.exports = {
   @tailwind components;
   @tailwind utilities;
 ```
+4. ```npx tailwindcss -i ./src/tailwind.css -o ./assests/application.css```
          
 
