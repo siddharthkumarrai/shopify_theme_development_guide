@@ -29,4 +29,8 @@
 ## login shopify partner account https://shopify.dev
 ## create a development store
 ## shopify CLI installation    [Rrad Docs](https://shopify.dev/themes/tools/cli/installation)
+# initialize shopify project
+1. ``` shopify theme init ```
+2. ``` shopify theme init --clone-url=https://github.com/siddharthkumarrai/shopify_starter_template.git ```
+3. ``` git clone https://github.com/siddharthkumarrai/shopify_starter_template.git ```
 
