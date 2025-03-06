@@ -54,4 +54,6 @@
 #  Installing TailwindCSS to Shopify theme projects
 1. ```node.js npm init -y```
 2. ```node.js npm install -D tailwindcss ```
+3. ```node.js npx tailwindcss init ```
+> 
 
