@@ -51,5 +51,9 @@
 ```node.js
     shopify theme dev --store siddharthkumarrai.myshopify.com
 ```
-
+#  Installing TailwindCSS to Shopify theme projects
+1.)
+```node.js
+    npm init -y
+```
 
