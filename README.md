@@ -35,6 +35,6 @@
 3. ``` git clone https://github.com/siddharthkumarrai/shopify_starter_template.git ```
 ## connect shopify store to development environment
 ```node.js
-    shopify theme dev --store
+    shopify theme dev --store siddharthkumarrai.myshopify.com
 ```
 
