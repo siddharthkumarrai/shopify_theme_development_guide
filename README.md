@@ -11,9 +11,9 @@
     - Locales
 ## Shopify Liquid are categories in 3 features
 1. Objects  { { ... } }
-  - also known as variable , To output pices of data from a Shopify store
-  - example :- {{ shop.name }}
-  - learn Shopify objects ➡ [Read Docs](https://shopify.dev/api/liquid).
+      - also known as variable , To output pices of data from a Shopify store
+      - example :- {{ shop.name }}
+      - learn Shopify objects ➡ [Read Docs](https://shopify.dev/api/liquid).
 3. Tag { % ... % } { % end % }
   - TAGS are the programming logic that tells template what to do
   - Tags are divided into 3 category
