@@ -33,6 +33,7 @@
 1. ``` shopify theme init ```
 2. ``` shopify theme init --clone-url=https://github.com/siddharthkumarrai/shopify_starter_template.git ```
 3. ``` git clone https://github.com/siddharthkumarrai/shopify_starter_template.git ```
+4. ``` shopify theme init [ NAME OF YOUR THEME ] --clone-url https://github.com/siddharthkumarrai/shopify_starter_template.git```
 ## connect shopify store to development environment
 ```node.js
     shopify theme dev --store siddharthkumarrai.myshopify.com
