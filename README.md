@@ -55,5 +55,20 @@
 1. ```node.js npm init -y```
 2. ```node.js npm install -D tailwindcss ```
 3. ```node.js npx tailwindcss init ```
-> 
+> if not created tailwind.config.js then make manual
+```node.js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./layout/*./liquid",
+    "*",
+    "./**/*.{liquid,html,js}", // Adjust this to match your Shopify theme files
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+```
+         
 
