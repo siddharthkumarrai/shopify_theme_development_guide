@@ -71,8 +71,6 @@ module.exports = {
 };
 ```
 > mkdir src touch input.css
-- input.css
--
 ```node.js
   @tailwind base;
   @tailwind components;
