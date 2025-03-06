@@ -28,6 +28,5 @@
 4. Filters {{ product.title | upcase }}
 ## login shopify partner account https://shopify.dev
 ## create a development store
-## shopify CLI installation
-[Rrad Docs](https://shopify.dev/themes/tools/cli/installation)
+## shopify CLI installation    [Rrad Docs](https://shopify.dev/themes/tools/cli/installation)
 
