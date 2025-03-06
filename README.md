@@ -20,11 +20,11 @@
           - Control flow TAGS  ex:- if,unless, else/elsif, case/when, and/or
           - iteration TAGS
           - theme variable TAGS
-                - Template-specific HTML codes
-                - Dividing arrays into multiple pages
-                - To make Shopify themes use custom layouts/snippets
-                - {% assign variable_name = shop.name %}
-                - output :- {{variable_name}}
+            - Template-specific HTML codes
+            - Dividing arrays into multiple pages
+            - To make Shopify themes use custom layouts/snippets
+            - {% assign variable_name = shop.name %}
+            - output :- {{variable_name}}
 4. Filters {{ product.title | upcase }}
 ## login shopify partner account https://shopify.dev
 ## create a development store
