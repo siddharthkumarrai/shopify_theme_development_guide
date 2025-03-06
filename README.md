@@ -37,4 +37,19 @@
 ```node.js
     shopify theme dev --store siddharthkumarrai.myshopify.com
 ```
+- if previous command not work
+```node.js
+    shopify auth logout
+```
+```node.js
+    npm uninstall -g @shopify/cli @shopify/theme @shopify/hydrogen
+    npm install -g @shopify/cli @shopify/theme
+```
+```node.js
+    shopify login
+```
+```node.js
+    shopify theme dev --store siddharthkumarrai.myshopify.com
+```
+
 
