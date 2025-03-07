@@ -80,5 +80,6 @@ module.exports = {
 4. ```npx tailwindcss -i ./src/tailwind.css -o ./assests/application.css```
 ## Fixing Shopify CLI errors with .shopifyignore
 > make .shopifyignore file in root directory
-- write ( error file name ) ex:- package.json
+- write ( error file name )
+- example:- package.json
 
