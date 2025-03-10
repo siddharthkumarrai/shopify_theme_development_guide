@@ -100,4 +100,16 @@ npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
     </main>
   </body>
 ```
-
+## How to use icon
+> snippets/icon-bag.liquid
+```svg
+<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M17 14 8.26522 14 8V7H16V17Z" fill="currentColor"/>
+</svg>
+```
+> sections/header.liquid
+```html
+<a href="{{ routes.cart_url }}">
+    {%- render 'icon-bag' -%}
+</a>
+```
