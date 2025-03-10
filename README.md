@@ -86,4 +86,18 @@ npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
 > make .shopifyignore file in root directory
 - write ( error file name )
 - example:- package.json
+## Folders and file structure of source code
+> sections/header.liquid
+```javascript
+```
+> layout/theme.liquid
+```javascript
+  <body>
+    {% section 'header' %}
+    {% section 'hero_section_slider' %}
+    <main role="main">
+      {{ content_for_layout }}
+    </main>
+  </body>
+```
 
