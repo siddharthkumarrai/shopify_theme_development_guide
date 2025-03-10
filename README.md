@@ -53,31 +53,35 @@ shopify login
 shopify theme dev --store siddharthkumarrai.myshopify.com
 ```
 #  Installing TailwindCSS to Shopify theme projects
-1. ```node.js npm init -y```
-2. ```node.js npm install -D tailwindcss ```
-3. ```node.js npx tailwindcss init ```
-> if not created tailwind.config.js then make manual
-```node.js
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./layout/*./liquid",
-    "*",
-    "./**/*.{liquid,html,js}", // Adjust this to match your Shopify theme files
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-};
+- Tailwind CLI
+> Terminal
+```javascript
+npm install tailwindcss @tailwindcss/cli
 ```
-> mkdir src touch input.css
-```node.js
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+> src/input.css
+```javascript
+@import "tailwindcss";
 ```
-4. ```npx tailwindcss -i ./src/tailwind.css -o ./assests/application.css```
+> Terminal
+```javascript
+npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+```
+> src/index.html
+```javascript
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+</body>
+</html>
+```
 ## Fixing Shopify CLI errors with .shopifyignore
 > make .shopifyignore file in root directory
 - write ( error file name )
