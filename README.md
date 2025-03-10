@@ -36,21 +36,21 @@
 4. ``` shopify theme init [ NAME OF YOUR THEME ] --clone-url https://github.com/siddharthkumarrai/shopify_starter_template.git```
 ## connect shopify store to development environment
 ```node.js
-    shopify theme dev --store siddharthkumarrai.myshopify.com
+shopify theme dev --store siddharthkumarrai.myshopify.com
 ```
 - if previous command not work
 ```node.js
-    shopify auth logout
+shopify auth logout
 ```
 ```node.js
-    npm uninstall -g @shopify/cli @shopify/theme @shopify/hydrogen
-    npm install -g @shopify/cli @shopify/theme
+npm uninstall -g @shopify/cli @shopify/theme @shopify/hydrogen
+npm install -g @shopify/cli @shopify/theme
 ```
 ```node.js
-    shopify login
+shopify login
 ```
 ```node.js
-    shopify theme dev --store siddharthkumarrai.myshopify.com
+shopify theme dev --store siddharthkumarrai.myshopify.com
 ```
 #  Installing TailwindCSS to Shopify theme projects
 1. ```node.js npm init -y```
