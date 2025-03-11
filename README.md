@@ -100,6 +100,47 @@ npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
     </main>
   </body>
 ```
+## How to display links
+```html
+<nav x-data="{ open: false }">
+        {% for link in linklists['main-menu'].links %}
+          {% if link.links != blank %}
+              <button
+                x-on:click="open = ! open"
+                type="button"
+              >
+                {{ link.title }}
+                {% render 'drop-down-arrow' %}
+              </button>
+              <div
+                x-show="open"
+                @click.away="open = false"
+              >
+                    {% for childlink in link.links %}
+                      <a href="{{ childlink.url }}">
+                          <p class="text-gray-900 text-base font-medium">{{ childlink.title }}</p>
+                      </a>
+                    {% endfor %}
+          {% else %}
+            <div class="relative">
+              <a
+                href="{{ link.url }}"
+                class="
+                  {% if link.active == true %}
+                    text-red-500
+                  {% endif -%}
+                  text-base
+                  text-gray-500
+                  hover:text-gray-900
+                "
+              >
+                {{ link.title }}
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </nav>
+```
 ## How to use icon
 > snippets/icon-bag.liquid
 ```svg
