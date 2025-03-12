@@ -154,3 +154,5 @@ npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
     {%- render 'icon-bag' -%}
 </a>
 ```
+## Schema Tag
+![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/v1741759999/projects_images/logo/Screenshot_356_oec4hs.png)
