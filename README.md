@@ -160,3 +160,44 @@ npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
 ![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/v1741845243/projects_images/logo/Screenshot_375_djeb6r.png)
 
 #### Step 1: Create the ```templates/404.json``` File
+```json
+{
+  "sections": {
+    "main_id": {
+      "type": "main-404",
+      "settings": {}
+    }
+  },
+  "order": ["main_id"]
+}
+```
+### Step 2: Create the ```sections/main-404.liquid``` File
+```json
+<div class="page-404">
+  <h1>{{ 'templates.404.title' | t }}</h1>
+  <p>{{ 'templates.404.subtext' | t }}</p>
+  <a href="/" class="btn">Return to Homepage</a>
+
+  <!-- Search Form -->
+  <form action="/search" method="get" class="search-form">
+    <input type="text" name="q" placeholder="Search the store...">
+    <button type="submit">Search</button>
+  </form>
+</div>
+
+<style>
+  .page-404 {
+    text-align: center;
+    padding: 50px 20px;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "404 Page",
+  "tag": "section",
+  "class": "section-404",
+  "settings": []
+}
+{% endschema %}
+```
