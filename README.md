@@ -156,3 +156,6 @@ npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
 ```
 ## Schema Tag
 ![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/v1741759999/projects_images/logo/Screenshot_356_oec4hs.png)
+## JSON Templates
+![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/v1741845243/projects_images/logo/Screenshot_375_djeb6r.png)
+
