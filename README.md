@@ -159,3 +159,4 @@ npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
 ## JSON Templates
 ![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/v1741845243/projects_images/logo/Screenshot_375_djeb6r.png)
 
+#### Step 1: Create the ```templates/404.json``` File
