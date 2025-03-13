@@ -172,7 +172,7 @@ npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
 }
 ```
 ### Step 2: Create the ```sections/main-404.liquid``` File
-```json
+```liquid
 <div class="page-404">
   <h1>{{ 'templates.404.title' | t }}</h1>
   <p>{{ 'templates.404.subtext' | t }}</p>
