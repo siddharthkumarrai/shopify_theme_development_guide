@@ -171,12 +171,19 @@ npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
   "order": ["main_id"]
 }
 ```
-### Step 2: Create the ```sections/main-404.liquid``` File
+### Step 2: Create the ```sections/template-404.liquid``` File
 ```liquid
 <div class="page-404">
-  <h1>{{ 'templates.404.title' | t }}</h1>
-  <p>{{ 'templates.404.subtext' | t }}</p>
-  <a href="/" class="btn">Return to Homepage</a>
+  <h1>{{ section.settings.title}}</h1>
+  <p>{{ section.settings.Subtext_title }}</p>
+
+    {% if section.settings.button_url == blank %}
+        {% assign shop_url = shop.secure_url %}
+    {% else %}
+        {% assign shop_url = section.settings.button_url %}
+    {% ebdif %}
+    <a href="{{  shop_url }}"> {{ section.settings.button_label }}</a>
+
 
   <!-- Search Form -->
   <form action="/search" method="get" class="search-form">
@@ -194,10 +201,33 @@ npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
 
 {% schema %}
 {
-  "name": "404 Page",
+  "name": "Template 404",
   "tag": "section",
-  "class": "section-404",
-  "settings": []
+  "class" "flex item-center justify-center"
+  "settings":[
+       {
+            "type": "text",
+            "id": "title",
+            "default": "404",
+            "label": "404 Heading Title"
+       },
+       {
+            "type": "text",
+            "id": "subtext_titlle",
+            "default": "The page thaat you're looking for is not found",
+            "label": "404 Subtext Title"
+       },
+       {
+            "type": "text",
+            "id": "button_label",
+            "default": "Back to homepage",
+            "label": "Button Label"
+       },
+       {
+            "type": "url",
+            "id": "button_url",
+            "label": Button URL"
+   ]
 }
 {% endschema %}
 ```
