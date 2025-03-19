@@ -159,6 +159,24 @@ npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
 ## JSON Templates
 ![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/v1741845243/projects_images/logo/Screenshot_375_djeb6r.png)
 
+## Templates Attributes how work
+ ```templates/404.json```
+```json
+{
+    "name": "Template 404",
+    "layout": "custom_theme",
+    "wrapper": "div#404_template.custom-class[custom-attribute=hello]",
+    "sections": {
+        "template-404": {
+                "type": "example-404"
+        },
+        "order": ["template-404"]
+}
+#### step 2: Create the ```layout/custom_theme.liquid``` file
+#### step 3: Create the ```sections/example-404.liquid``` file
+#### step 4: order attribute array will value is section_id ( for ex: template-404 )
+
+
 #### Step 1: Create the ```templates/404.json``` File
 ```json
 {
@@ -171,7 +189,22 @@ npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
   "order": ["main_id"]
 }
 ```
-### Step 2: Create the ```sections/template-404.liquid``` File
+### Good Practice for tamplate
+1. Step 1: create ```templates/404.json```
+> templates/404.json
+```json
+{
+    "name": "Template 404",
+    "sections": {
+        "template":{
+            "type": "template-404"
+         }
+     },
+     "order": ["template"]
+}
+```
+2.) Step 2: create ```sections/template-404.liquid```
+> sections/template-404.liquid
 ```liquid
 <div class="page-404">
   <h1>{{ section.settings.title}}</h1>
